@@ -1,7 +1,5 @@
-package test
+package test.aoc2024
 
-import Resources.resourceAsListOfInt
-import Resources.resourceAsListOfString
 import Resources.resourceAsString
 import aoc_2024.Day11
 import org.assertj.core.api.Assertions.assertThat
@@ -18,14 +16,14 @@ class Day11Test {
 
         @Test
         fun `Matches example`() {
-            val answer = Day11(resourceAsString("day11_example.txt"), 6).solvePart1()
+            val answer = Day11(resourceAsString("files2024/day11_example.txt"), 6).solvePart1()
 
             assertThat(answer).isEqualTo(22)
         }
 
         @Test
         fun `Actual answer`() {
-            val answer = Day11(resourceAsString("day11.txt"), 25).solvePart1()
+            val answer = Day11(resourceAsString("files2024/day11.txt"), 25).solvePart1()
 
             assertThat(answer).isEqualTo(193269)
         }
@@ -37,14 +35,14 @@ class Day11Test {
     inner class Part2 {
         @Test
         fun `Matches example`() {
-            val answer = Day11(resourceAsString("day11_example.txt"), 75).solvePart2()
+            val answer = Day11(resourceAsString("files2024/day11_example.txt"), 75).solvePart2()
 
             assertThat(answer).isEqualTo(65601038650482L)
         }
 
         @Test
         fun `Actual answer`() {
-            val answer = Day11(resourceAsString("day11.txt"), 75).solvePart2()
+            val answer = Day11(resourceAsString("files2024/day11.txt"), 75).solvePart2()
 
             assertThat(answer).isEqualTo(228449040027793)
         }

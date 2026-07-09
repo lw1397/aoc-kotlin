@@ -1,4 +1,4 @@
-package test
+package test.aoc2024
 
 import Resources.resourceAsString
 import aoc_2024.Day09
@@ -25,7 +25,7 @@ class Day09Test {
 
         @Test
         fun `Matches example`() {
-            val answer = Day09(resourceAsString("day09_example.txt")).solvePart1()
+            val answer = Day09(resourceAsString("files2024/day09_example.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(1928)
         }
@@ -34,7 +34,7 @@ class Day09Test {
 
         @Test
         fun `Actual answer`() {
-            val answer = Day09(resourceAsString("day09.txt")).solvePart1()
+            val answer = Day09(resourceAsString("files2024/day09.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(6288599492129)
         }
@@ -46,14 +46,14 @@ class Day09Test {
     inner class Part2 {
         @Test
         fun `Matches example`() {
-            val answer = Day09(resourceAsString("day09_example.txt")).solvePart2()
+            val answer = Day09(resourceAsString("files2024/day09_example.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(2858)
         }
 
         @Test
         fun `Actual answer`() {
-            val answer = Day09(resourceAsString("day09.txt")).solvePart2()
+            val answer = Day09(resourceAsString("files2024/day09.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(6321896265143)
         }

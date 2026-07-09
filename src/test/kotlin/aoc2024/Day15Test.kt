@@ -1,4 +1,4 @@
-package test
+package test.aoc2024
 
 import Resources.resourceAsListOfString
 import aoc_2024.Day15
@@ -16,21 +16,21 @@ class Day15Test {
 
         @Test
         fun `Matches example short`() {
-            val answer = Day15(resourceAsListOfString("day15_example_short.txt")).solvePart1()
+            val answer = Day15(resourceAsListOfString("files2024/day15_example_short.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(2028)
         }
 
         @Test
         fun `Matches example`() {
-            val answer = Day15(resourceAsListOfString("day15_example.txt")).solvePart1()
+            val answer = Day15(resourceAsListOfString("files2024/day15_example.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(10092)
         }
 
         @Test
         fun `Actual answer`() {
-            val answer = Day15(resourceAsListOfString("day15.txt")).solvePart1()
+            val answer = Day15(resourceAsListOfString("files2024/day15.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(1476771)
         }
@@ -42,7 +42,7 @@ class Day15Test {
     inner class Part2 {
         @Test
         fun `Matches example p2`() {
-            val answer = Day15(resourceAsListOfString("day15_example_p2.txt")).solvePart2()
+            val answer = Day15(resourceAsListOfString("files2024/day15_example_p2.txt")).solvePart2()
 
             // Print and compare to AoC P2 Example
             //assertThat(answer).isEqualTo(2028)
@@ -50,14 +50,14 @@ class Day15Test {
 
         @Test
         fun `Matches example`() {
-            val answer = Day15(resourceAsListOfString("day15_example.txt")).solvePart2()
+            val answer = Day15(resourceAsListOfString("files2024/day15_example.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(9021)
         }
 
         @Test
         fun `Actual answer`() {
-            val answer = Day15(resourceAsListOfString("day15.txt")).solvePart2()
+            val answer = Day15(resourceAsListOfString("files2024/day15.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(1468005)
         }

@@ -1,4 +1,4 @@
-package test
+package test.aoc2024
 
 import Resources.resourceAsListOfString
 import aoc_2024.Day12
@@ -16,21 +16,21 @@ class Day12Test {
 
         @Test
         fun `Matches example 1`() {
-            val answer = Day12(resourceAsListOfString("day12_example1.txt")).solvePart1()
+            val answer = Day12(resourceAsListOfString("files2024/day12_example1.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(140)
         }
 
         @Test
         fun `Matches example 2`() {
-            val answer = Day12(resourceAsListOfString("day12_example2.txt")).solvePart1()
+            val answer = Day12(resourceAsListOfString("files2024/day12_example2.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(772)
         }
 
         @Test
         fun `Matches example 3`() {
-            val answer = Day12(resourceAsListOfString("day12_example3.txt")).solvePart1()
+            val answer = Day12(resourceAsListOfString("files2024/day12_example3.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(1930)
         }
@@ -38,7 +38,7 @@ class Day12Test {
 
         @Test
         fun `Actual answer`() {
-            val answer = Day12(resourceAsListOfString("day12.txt")).solvePart1()
+            val answer = Day12(resourceAsListOfString("files2024/day12.txt")).solvePart1()
 
             assertThat(answer).isEqualTo(6288599492129)
         }
@@ -50,28 +50,28 @@ class Day12Test {
     inner class Part2 {
         @Test
         fun `Matches example 1`() {
-            val answer = Day12(resourceAsListOfString("day12_example1.txt")).solvePart2()
+            val answer = Day12(resourceAsListOfString("files2024/day12_example1.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(80)
         }
 
         @Test
         fun `Matches example 2`() {
-            val answer = Day12(resourceAsListOfString("day12_example2.txt")).solvePart2()
+            val answer = Day12(resourceAsListOfString("files2024/day12_example2.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(436)
         }
 
         @Test
         fun `Matches example E`() {
-            val answer = Day12(resourceAsListOfString("day12_E.txt")).solvePart2()
+            val answer = Day12(resourceAsListOfString("files2024/day12_E.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(236)
         }
 
         @Test
         fun `Matches example AB`() {
-            val answer = Day12(resourceAsListOfString("day12_AB.txt")).solvePart2()
+            val answer = Day12(resourceAsListOfString("files2024/day12_AB.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(368)
         }
@@ -86,7 +86,7 @@ class Day12Test {
 
         @Test
         fun `Actual answer`() {
-            val answer = Day12(resourceAsListOfString("day12.txt")).solvePart2()
+            val answer = Day12(resourceAsListOfString("files2024/day12.txt")).solvePart2()
 
             assertThat(answer).isEqualTo(855082)
         }
