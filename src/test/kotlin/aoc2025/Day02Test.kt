@@ -1,8 +1,6 @@
 package test.aoc2025
 
-import Resources.resourceAsListOfString
 import Resources.resourceAsText
-import aoc_2025.Day01
 import aoc_2025.Day02
 import org.assertj.core.api.Assertions.assertThat
 import org.junit.jupiter.api.DisplayName
